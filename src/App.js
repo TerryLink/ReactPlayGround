@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-
+import HelloWorld from './components/featureA/HelloWorld';
+import Counter from './components/featureA/Counter';
+import Welcom from './components/featureA/Welcom';
+import FormSubmit from './components/featureA/formSubmit'
+import UserList from './components/featureA/UserList';
 function App() {
   return (
     <div className="App">
@@ -17,6 +21,25 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+          <HelloWorld />
+        </div>
+        <div>
+          <Counter />
+        </div>
+        <div>
+          <Welcom name="haha" />
+        </div>
+        <div>
+          <button onClick={()=>{console.log("test")}}>Click me!2</button>
+        </div>
+        <div>
+          <FormSubmit />
+        </div>
+        <div>
+          <h1>User List</h1>
+          <UserList />
+        </div>
       </header>
     </div>
   );
